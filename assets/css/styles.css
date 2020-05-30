@@ -1,0 +1,39 @@
+header {
+    background-color: #323242;
+    color: #11d2ba;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+header h1 {
+   margin-left: 75px;
+}
+/* navigation styles */
+header nav {
+    margin: 10px 0;
+}
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    color: #11d2ba;
+    border-bottom: currentColor;
+}
+/* nav styles end */
+
+body {
+    margin: 0;
+}
+/* hero background image styling */
+.hero {
+    height: 400px;
+    width: 100%;
+    background-image: url("../images/Background1.jpg");
+    background-size: cover;
+    background-position: center;
+}
