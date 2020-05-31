@@ -36,7 +36,14 @@ header nav ul li a {
     font-size: 20px;
     margin-right: 20px;
 }
-/* nav styles end */
+/* nav styles end */ 
+.section-title {
+    width: 12%;
+    margin: 12px;
+    display: inline-block;
+    border-right: 3px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
 footer nav ul {
     color: var(--secondary-color);
     display: flex;
@@ -91,11 +98,6 @@ body {
     padding: 15px 0;
     border: 2px solid var(--primary-color);
     align-items: center;
-    
-}
-.work h2, #About-Me h2, footer h2 {
-    width: 20%;
-    padding: 20px;
 }
 /* box placement */
 .run-buddy {
@@ -144,3 +146,60 @@ body {
 background-image: url(../images/RunBuddyBkGrnd.jpg);
 background-size: cover;
 }
+.work-grid-item {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    border: 3px solid var(--primary-color);
+    position: relative;
+  }
+  .work-grid-item::before {
+    position: absolute;
+    background-color: orange;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    content: "";
+    transition: opacity 0.3s ease;
+  }
+  .work-grid-item:hover::before {
+    transition: opacity 0.3s ease;
+    opacity: 0.5;
+  }
+
+  @media screen and (max-width: 980px) {
+  header {
+      width: 100%;
+  }
+  body {
+      width: 100%;
+  } 
+  .hero-subtitle {
+     line-height: 20px;
+     height: 75px;
+  }
+}
+  @media screen and (max-width: 768px) {
+    header {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    } 
+    .work-container {
+        width: 99%;
+    }
+    .work-grid-item h3, .work-grid-item h4 {
+        left: 75px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    header {
+        width: 100%;
+    }
+    body {
+        width: 100%;
+    } 
+  }
