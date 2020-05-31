@@ -58,11 +58,18 @@ body {
 }
 /* hero background image styling */
 .hero {
+    position: relative;
     height: 400px;
     width: 100%;
     background-image: url("../images/Background1.jpg");
     background-size: cover;
     background-position: center;
+}
+.hero #bio-image {
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    height: 300px;
 }
 .hero-subtitle {
     text-align: center;
