@@ -126,7 +126,7 @@ body {
     grid-row-start: 1;
     grid-row-end: 3;
 }
-.work3 {
+.project-two {
     grid-column-start: 7;
     grid-column-end: 10;
     grid-row-start: 3;
@@ -163,7 +163,11 @@ background-size: cover;
 .work-grid-item.project-one{
     background-image: url(../images/HereNow.jpg);
     background-size: cover;
-    }
+}
+.work-grid-item.project-two{
+    background-image: url(../images/SimpleSocial.png);
+    background-size: cover;
+}
 .work-grid-item {
     display: flex;
     justify-content: left;
