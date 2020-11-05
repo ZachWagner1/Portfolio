@@ -132,7 +132,7 @@ body {
     grid-row-start: 3;
     grid-row-end: 5;
 }
-.work4 {
+.project-three {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 4;
@@ -152,8 +152,34 @@ body {
         color: var(--secondary-color);
         font-weight: bold;
         background: var(--primary-color);
-        height: 70px;
-        line-height: 35px;
+        height: 30px;
+        line-height: 30px;
+        padding: 10px;
+}
+
+.work-grid-item.project-one h3, .work-grid-item.project-two h3 {
+
+    position: relative;
+    bottom: -35.5%;
+    Left: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    background: var(--primary-color);
+    height: 50px;
+    line-height: 30px;
+    padding: 10px;
+}
+
+.work-grid-item.run-buddy h3 {
+    position: relative;
+    bottom: -40.5%;
+    Left: 10px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    background: var(--primary-color);
+    height: 30px;
+    line-height: 30px;
+    padding: 10px;
 }
 
 .work-grid-item.run-buddy{
@@ -166,6 +192,10 @@ background-size: cover;
 }
 .work-grid-item.project-two{
     background-image: url(../images/SimpleSocial.png);
+    background-size: cover;
+}
+.work-grid-item.project-three{
+    background-image: url(../images/wordsprojects.png);
     background-size: cover;
 }
 .work-grid-item {
